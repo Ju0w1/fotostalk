@@ -1,0 +1,70 @@
+:root {
+    --color-principal: #FEE2A0;
+    --color-principal-contraste: #001F26;
+    --color-secundario: #E86FB4;
+    --color-secundario-contraste: #991d44;
+    --blanco: #d6ffed;
+    --padding-lateral: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #991D44;
+    background: linear-gradient(180deg, var(--color-secundario-contraste) 0%, var(--color-principal-contraste) 100%);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    color: var(--blanco);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--padding-lateral);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--color-principal);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+main {
+    padding: 0 var(--padding-lateral);
+    float: left;
+    width: calc(100% - 30% - var(--padding-lateral) * 4);
+    border: var(--color-secundario) solid 1px;
+    margin-left: var(--padding-lateral);
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin-right: var(--padding-lateral);
+    border: var(--color-secundario) solid 1px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-lateral)var(--padding-lateral);
+}
+
+section {
+    margin-bottom: var(--padding-lateral);
+    border: var(--color-principal) solid 1px;
+}
+
+.postear {
+    width: 100%;
+}
