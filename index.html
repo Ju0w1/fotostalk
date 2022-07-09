@@ -21,10 +21,11 @@
     </header>
     <main>
         <section class="postear">
+            <h2>Nuevo post</h2>
             <img src="" alt="">
             <form action="">
                 <fieldset>
-                    <legend>Nuevo post</legend>
+                    <legend>Post</legend>
                     <label for="descripcion">Descripción</label>
                     <textarea name="descripcion" id="" rows="2"></textarea>
                     <label for="foto">Foto a subir</label>
@@ -35,52 +36,42 @@
         </section>
         <section class="posts">
             <h2>Posts</h2>
-            <article>
-                <div>
+            <div id="posts">
+                <article>
+                    <header>
+                        <img src="" alt="">
+                        <h4>username</h4>
+                    </header>
                     <img src="" alt="">
-                    <h4>username</h4>
-                </div>
-                <img src="" alt="">
-                <section class="interacciones">
-                    <a href="#">L</a>
-                    <a href="#">C</a>
-                </section>
-                <section class="descripcion">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi cum, aut suscipit distinctio, fuga debitis non, corporis ratione officiis voluptates vel quo facere iste quod neque esse dicta dolore!</p>
-                </section>
-                <section class="comentarios">
-                    <ul>
-                        <li>
-                            <h6>username</h6>
-                            <p>comment</p>
-                        </li>
-                    </ul>
-                </section>
-            </article>
+                    <section class="interacciones">
+                        <a href="#">L</a>
+                        <a href="#">C</a>
+                    </section>
+                    <section class="descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi cum, aut suscipit distinctio, fuga debitis non, corporis ratione officiis voluptates vel quo facere iste quod neque esse dicta dolore!</p>
+                    </section>
+                    <section class="comentarios">
+                        <ul>
+                            <li>
+                                <h6>username</h6>
+                                <p>comment</p>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
         </section>
     </main>
     <aside>
         <h2>Contactos</h2>
-        <div>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <h5>username</h5>
-                    <h6>email</h6>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h5>username</h5>
-                    <h6>email</h6>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h5>username</h5>
-                    <h6>email</h6>
-                </li>
-            </ul>
-        </div>
+        <ul id="lista-contactos">
+            <li>
+                <p>Cargando contactos...</p>
+            </li>
+        </ul>
     </aside>
+    <script src="https://kit.fontawesome.com/65752bfe62.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
