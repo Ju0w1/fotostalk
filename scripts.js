@@ -311,6 +311,7 @@ function handleDrop(e) {
     let dt = e.dataTransfer
     let files = dt.files
 
+    document.getElementById('fileElem').files = files;
     handleFiles(files);
 }
 
@@ -322,9 +323,10 @@ function previewFile(file) {
     let reader = new FileReader()
     reader.readAsDataURL(file)
     reader.onloadend = function() {
-        let img = document.createElement('img')
-        img.src = reader.result
-        document.getElementById('gallery').appendChild(img)
+        let img = document.createElement('img');
+        img.src = reader.result;
+        document.getElementById('gallery').appendChild(img);
+
         img.style.width = '50%';
     }
 }
